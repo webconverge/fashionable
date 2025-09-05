@@ -1,0 +1,50 @@
+
+
+
+/* 
+
+    --header menu--
+
+*/
+
+/* base classes */
+.header-menu-wrapper{
+    position:fixed;
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    padding:40px;
+    box-sizing:border-box;
+    background-color:var(--battleship-gray);
+    top:-100%;
+}
+
+.menu-close-btn{
+    align-self:start;
+    font-size:1.3rem;
+    cursor:pointer;
+}
+
+.header-menu{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    flex-grow:1;
+}
+
+.header-menu-item{
+    align-self:center;
+    font-size:1.5rem;
+}
+
+
+/* classes on event */
+.header-menu-item:hover{
+    color:var(--purpureus);
+}
+
+
+
+

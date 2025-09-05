@@ -1,0 +1,66 @@
+
+
+/* 
+
+    --header--
+
+*/
+
+/* base classes */
+.header{
+    grid-column:1/-1;
+    display:grid;
+    grid-template-columns:subgrid;
+    height:70px;
+    align-items:center;
+}
+
+.header-inner-wrapper{
+    grid-column:4/14;
+    display:flex;
+    justify-content:space-between;
+}
+
+.header-btn-wrapper{
+    display:flex;
+    gap:10px;
+}
+
+.menu-open-btn{
+    font-size:1.3rem;
+    cursor:pointer;
+}
+
+.cart-btn{
+    font-size:1.3rem;
+    position:relative;
+    cursor:pointer;
+}
+
+.cart-item-nb{
+    font-size:0.6rem;
+    background-color:var(--purpureus);
+    color:white;
+    width:20px;
+    height:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    position:absolute;
+    top:-40%;
+    right:-40%;
+}
+
+.brand{
+    font-size:1.5rem;
+    border-bottom:1px solid var(--purpureus);
+    font-weight:bold;
+}
+
+.header-contact{
+    font-size:1.3rem;
+}
+
+
+

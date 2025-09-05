@@ -1,0 +1,52 @@
+
+@import url("./header.css");
+
+@import url("./cart.css");
+
+@import url("./header_menu.css");
+
+:root{
+    --emerald: #23ce6bff;
+    --dark-spring-green: #257e4cff;
+    --gunmetal: #272d2dff;
+    --davys-gray: #5b6062ff;
+    --battleship-gray: #8f9396ff;
+    --ghost-white: #f6f8ffff;
+    --lilac: #cf9fd0ff;
+    --purpureus: #a846a0ff;
+    --plum: #7c4c78ff;
+    --davys-gray-2: #50514fff;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    border-width:0;
+    background-color:transparent;
+}
+
+body{
+    display:grid;
+    grid-template-columns:repeat(16, 1fr);
+    min-width:400px;
+    min-height:100vh;
+}
+
+.main{
+    display:grid;
+    grid-column:1/-1;
+    grid-template-columns:subgrid;
+    grid-auto-rows:max-content;
+}
+
+
+
+
