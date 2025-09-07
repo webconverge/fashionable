@@ -1,0 +1,120 @@
+
+
+/*
+
+    --hero--
+
+*/
+
+/* base classes */
+.hero{
+    display:grid;
+    grid-column:1/-1;
+    grid-template-columns:subgrid;
+    row-gap:20px;
+    padding-block:40px;
+}
+
+.hero-title{
+    grid-column:5/13;
+    font-size:1.5rem;
+    font-weight:bold;
+    line-height:1.6;
+    text-align:center;
+    color:var(--dark-spring-green);
+}
+
+.hero-intro{
+    grid-column:5/13;
+    text-align:center;
+    line-height:1.6;
+    font-size:1.1rem;
+    color:var(--davys-gray);
+}
+
+.hero-wrapper{
+    grid-column:6/12;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+}
+
+.hero-inner-wrapper{
+    position:relative;
+    height:300px;
+    overflow:hidden;
+}
+
+.hero-img{
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    left:0;
+    object-fit:cover;
+}
+
+.hero-indicator{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    padding:10px;
+}
+
+.hero-prev{
+    position:absolute;
+    top:40%;
+    left:-40px;
+    cursor:pointer;
+    font-size:1.5rem;
+    color:var(--lilac);
+}
+
+.hero-next{
+    position:absolute;
+    top:40%;
+    right:-40px;
+    cursor:pointer;
+    font-size:1.5rem;
+    color:var(--lilac);
+}
+
+.hero-led{
+    padding:5px;
+    border-radius:10px;
+    background-color:var(--lilac);
+    cursor:pointer;
+}
+
+/* classes on event */
+.hero-led:hover{
+    background-color:var(--purpureus);
+}
+
+.hero-next:hover{
+    color:var(--purpureus);
+}
+
+.hero-prev:hover{
+    color:var(--purpureus);
+}
+
+.hero-wrapper-mobile{
+    grid-column:3/15;
+}
+
+.hero-title-mobile{
+    grid-column:3/15;
+}
+
+.hero-intro-mobile{
+    grid-column:3/15;
+}
+
+.hero-led-selected{
+    background-color:var(--purpureus);
+}
+
+
+
+

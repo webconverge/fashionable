@@ -19,6 +19,9 @@
     box-sizing:border-box;
     background-color:var(--battleship-gray);
     top:-100%;
+    opacity:0;
+    left:0;
+    transition:all 0.5s;
 }
 
 .menu-close-btn{
@@ -43,6 +46,11 @@
 /* classes on event */
 .header-menu-item:hover{
     color:var(--purpureus);
+}
+
+.header-menu-wrapper-opened{
+    top:0;
+    opacity:1;
 }
 
 

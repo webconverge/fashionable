@@ -19,6 +19,7 @@
     background-color:var(--battleship-gray);
     box-sizing:border-box;
     gap:20px;
+    transition:left 0.5s;
 }
 
 .cart-header{
@@ -97,6 +98,12 @@
     padding:10px;
     background-color:var(--plum);
     color:white;
+    cursor:pointer;
+}
+
+/* classes on event */
+.cart-opened{
+    left:0;
 }
 
 
