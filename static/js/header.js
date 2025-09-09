@@ -49,11 +49,15 @@ export default function header(){
     menuOpenBtn.addEventListener("click", ()=>{
 
         headerMenuWrapper.classList.add("header-menu-wrapper-opened")
+
+        document.body.style.overflowY = "hidden"
     })
 
     menuCloseBtn.addEventListener("click", ()=>{
 
         headerMenuWrapper.classList.remove("header-menu-wrapper-opened")
+
+        document.body.style.overflowY = ""
     })
 
     cartOpenBtn.addEventListener("click", ()=>{
@@ -61,6 +65,8 @@ export default function header(){
         cart.classList.add("cart-opened")
 
         overlay.classList.add("overlay-cart-opened")
+
+        document.body.style.overflowY = "hidden"
     })
 
     cartCloseBtn.addEventListener("click", ()=>{
@@ -68,6 +74,8 @@ export default function header(){
         cart.classList.remove("cart-opened")
 
         overlay.classList.remove("overlay-cart-opened")
+
+        document.body.style.overflowY = ""
     })
 
     overlay.addEventListener("click", e => {
@@ -77,6 +85,8 @@ export default function header(){
             cart.classList.remove("cart-opened")
 
             overlay.classList.remove("overlay-cart-opened")
+
+            document.body.style.overflowY = ""
         }
     })
 
@@ -85,6 +95,8 @@ export default function header(){
         item.addEventListener("click", ()=>{
 
             headerMenuWrapper.classList.remove("header-menu-wrapper-opened")
+
+            document.body.style.overflowY = ""
         })
     })
 }

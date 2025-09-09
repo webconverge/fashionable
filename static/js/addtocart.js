@@ -17,12 +17,19 @@ export default function addtocart(){
 
     addtocart.addEventListener("click", e => {
 
-        if(e.target == addtocart)  addtocart.classList.remove("addtocart-visible")
+        if(e.target == addtocart)  {
+            
+            addtocart.classList.remove("addtocart-visible")
+
+            document.body.style.overflowY = ""
+        }
     })
 
     addtocartBtn.addEventListener("click", ()=>{
 
         addtocart.classList.remove("addtocart-visible")
+
+        document.body.style.overflowY = ""
     })
 
     productItems.forEach(item => {
@@ -30,6 +37,8 @@ export default function addtocart(){
         item.addEventListener("click", ()=>{
 
             addtocart.classList.add("addtocart-visible")
+
+            document.body.style.overflowY = "hidden"
         })
     })
 
