@@ -67,7 +67,7 @@
     left:-40px;
     cursor:pointer;
     font-size:1.5rem;
-    color:var(--lilac);
+    color:var(--emerald);
 }
 
 .hero-next{
@@ -76,27 +76,27 @@
     right:-40px;
     cursor:pointer;
     font-size:1.5rem;
-    color:var(--lilac);
+    color:var(--emerald);
 }
 
 .hero-led{
     padding:5px;
     border-radius:10px;
-    background-color:var(--lilac);
+    background-color:var(--emerald);
     cursor:pointer;
 }
 
 /* classes on event */
 .hero-led:hover{
-    background-color:var(--purpureus);
+    background-color:var(--dark-spring-green);
 }
 
 .hero-next:hover{
-    color:var(--purpureus);
+    color:var(--dark-spring-green);
 }
 
 .hero-prev:hover{
-    color:var(--purpureus);
+    color:var(--dark-spring-green);
 }
 
 .hero-wrapper-mobile{
@@ -112,7 +112,7 @@
 }
 
 .hero-led-selected{
-    background-color:var(--purpureus);
+    background-color:var(--dark-spring-green);
 }
 
 

@@ -40,7 +40,7 @@
 }
 
 .process-item:not(.process-item:last-child) .process-title{
-    border-bottom:1px solid var( --battleship-gray);
+    border-bottom:1px solid var(--emerald);
 }
 
 .process-img{
@@ -59,8 +59,8 @@
 /* classes on event */
 .process-item:hover .process-title{
     transform:scale(1.1);
-    color:var(--purpureus);
-    background-color:var( --battleship-gray);
+    color:var(--dark-spring-green);
+    background-color:var(--emerald);
 }
 
 .process-item:hover .process-img{

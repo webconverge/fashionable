@@ -13,6 +13,12 @@
 
 @import url("./process.css");
 
+@import url("./product.css");
+
+@import url("./addtocart.css");
+
+@import url("./footer.css");
+
 :root{
     --emerald: #23ce6bff;
     --dark-spring-green: #257e4cff;
@@ -41,6 +47,10 @@ button{
     background-color:transparent;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display:grid;
     grid-template-columns:repeat(16, 1fr);
@@ -58,7 +68,7 @@ body{
 }
 
 .section-title{
-    font-size:1.4rem;
+    font-size:1.5rem;
     font-weight:bold;
     position:relative;
     align-self:start;
@@ -77,6 +87,17 @@ body{
 
 .section-title:hover::after{
     width:300px;
+}
+
+.scrolltop{
+    font-size:1.5rem;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    padding:10px;
+    border-radius:calc(10px + 1.5rem);
+    background-color:var(--dark-spring-green);
+    cursor:pointer;
 }
 
 

@@ -18,7 +18,7 @@
     grid-column:3/15;
     display:flex;
     justify-content:space-around;
-    border-bottom:1px solid var(--purpureus);
+    border-bottom:1px solid var(--dark-spring-green);
     height:70px;
     align-items:center;
 }
@@ -41,7 +41,7 @@
 
 .cart-item-nb{
     font-size:0.6rem;
-    background-color:var(--purpureus);
+    background-color:var( --dark-spring-green);
     color:white;
     width:15px;
     height:15px;
@@ -61,6 +61,7 @@
 
 .header-contact{
     font-size:1.2rem;
+    color:var(--davys-gray);
 }
 
 .overlay{
@@ -69,7 +70,7 @@
     position:fixed;
     top:0;
     left:0;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.8);
     display:none;
 }
 

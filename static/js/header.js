@@ -24,6 +24,8 @@ export default function header(){
 
     const overlay = document.querySelector(".overlay")
 
+    const headerMenuItems = document.querySelectorAll(".header-menu-item")
+
     const resizeScreen = new ResizeObserver(entries => {
 
         entries.forEach(entry => {
@@ -76,6 +78,14 @@ export default function header(){
 
             overlay.classList.remove("overlay-cart-opened")
         }
+    })
+
+    headerMenuItems.forEach(item => {
+
+        item.addEventListener("click", ()=>{
+
+            headerMenuWrapper.classList.remove("header-menu-wrapper-opened")
+        })
     })
 }
 

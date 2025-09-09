@@ -66,13 +66,14 @@
 
 .cart-item-price{
     font-size:0.8rem;
+    color:var(--ghost-white);
 }
 
 .cart-item-delete-btn{
     padding:10px;
     background-color:var(--plum);
     cursor:pointer;
-    color:white;
+    color:var(--ghost-white);
 }
 
 .cart-footer{
@@ -92,12 +93,13 @@
 
 .cart-total-price{
     font-size:0.8rem;
+    color:var(--ghost-white);
 }
 
 .cart-checkout{
     padding:10px;
     background-color:var(--plum);
-    color:white;
+    color:var(--ghost-white);
     cursor:pointer;
 }
 

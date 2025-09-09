@@ -1,0 +1,79 @@
+
+
+
+/* 
+
+    --addtocart--
+
+*/
+
+/* base classes */
+.addtocart{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(0,0,0,0.8);
+    top:0;
+    left:0;
+    z-index:2;
+    display:none;
+}
+
+.addtocart-inner-wrapper{
+    height:400px;
+    width:300px;
+    display:flex;
+    flex-direction:column;
+    border:1px solid var(--lilac);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.addtocart-img-wrapper{
+    position:relative;
+    flex-grow:1;
+}
+
+.addtocart-img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.addtocart-product-detail{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    padding:10px;
+    background-color:var(--lilac);
+}
+
+.addtocart-product-name{
+    color:var(--purpureus);
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+.addtocart-product-description{
+    color:var(--ghost-white);
+    line-height:1.6;
+}
+
+.addtocart-btn{
+    padding:10px;
+    color:var(--ghost-white);
+    background-color:var(--purpureus);
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* classes on event */
+.addtocart-visible{
+    display:flex;
+}
+
+
