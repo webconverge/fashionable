@@ -58,6 +58,11 @@
     font-weight:bold;
 }
 
+.addtocart-product-price{
+    font-weight:bold;
+    color:var(--purpureus);
+}
+
 .addtocart-product-description{
     color:var(--ghost-white);
     line-height:1.6;
